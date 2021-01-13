@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<title>ファイバリット・ビュー</title>
+<meta name="description" content="格安海外旅行を紹介している旅行会社ファイバリット・ビュー">
+<meta name="keywords" content="フェイバリット・ビュー,海外旅行,格安,ツアー,北アメリカ,アジア,アフリカ・中東,オセアニア,中南米,ヨーロッパ">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+<script>
+$(function() {
+    var showFlag = false;
+    var topBtn = $('#page-top');
+    topBtn.css('bottom', '-280px');
+    var showFlag = false;
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            if (showFlag == false) {
+                showFlag = true;
+                topBtn.stop().animate({'bottom' : '40px'}, 200);
+            }
+        } else {
+            if (showFlag) {
+                showFlag = false;
+                topBtn.stop().animate({'bottom' : '-280px'}, 200);
+            }
+        }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(function() {
+    $('.acc').hide();
+    $('.trigger').on('click', function() {
+        $(this).toggleClass('active');
+        $(this).next().slideToggle();
+    });
+});
+</script>
+
+</head>
+
+<body>
+<!----------------------------------------------------------ヘッダー-->
+<header>
+<h1 class="logo"><img src="images/logo_header.png" alt="Favorite veiw"></h1>
+
+<i class="fas fa-search trigger"></i>
+<form id="h-search" action="" method="get" target="_blank" class="acc">
+<input id="keywords" name="s" type="text"  placeholder="キーワードを入力">
+<input id="s-btn" type="submit"  value="検索">
+</form>
+
+<div class="menu">
+<p class="btn-menu trigger"><span></span><span></span><span></span></p>
+<div class="header-menu acc">
+<nav class="global">
+<ul>
+<li><a href="#">ホーム</a></li>
+<li><a href="recommend/">おすすめ特集</a></li>
+<li><a href="travelogue/">スタッフの海外旅行記</a></li>
+<li><a href="benefits/">特典・サービス</a></li>
+<li><a href="contact/">お問い合わせ</a></li>
+</ul>
+</nav>
+
+<nav class="sub-menu">
+<ul>
+<li><i class="fas fa-square"></i><a href="#">トラベルサポート</a></li>
+<li><i class="fas fa-square"></i><a href="#">海外旅行保険</a></li>
+<li><i class="fas fa-square"></i><a href="#">保険募集に関する勧誘方針<br>及び販売方針</a></li>
+<li><i class="fas fa-square"></i><a href="#">外務省海外安全情報</a></li>
+<li><i class="fas fa-square"></i><a href="#">厚生労働省感染情報</a></li>
+<li><i class="fas fa-square"></i><a href="#">個人情報保護方針</a></li>
+</ul>
+</nav>
+
+<ul class="sns">
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+</header>
+<!----------------------------------------------------------メイン-->
+<main>
+
+<div id="kv">
+<img src="images/kv.png" alt="">
+<p class="catch"><span>あなたの<span>「お気に入りの景色」<span>フェイバリット・ビュー</span></span></span>を見つけてください</p>
+<!-- kv --></div>
+
+<section id="recommend">
+<h1>おすすめ特集</h1>
+<p class="lead">「フェイバリット・ビュー」がおすすめする格安海外旅行です。気になったプランがあればすぐご予約を！</p>
+<div class="inner">
+    <div class="box
+	">
+<div class="world-pc">    <img src="images/recommend01.jpg" alt="夢心地のプーケット!"></div>
+    <h2>夢心地のプーケット!</h2>
+    <p class="price">¥36,800～¥122,000</p>
+    <p class="desp">お得な欲ばり2ヵ国周遊スペシャル！<span>マレーシア＆プーケット島5日</span></p>
+    </div>
+    <div class="box
+	">
+    <div class="world-pc"><img src="images/recommend02.jpg" alt="スピリチュアルタイ!"></div>
+    <h2>スピリチュアルタイ!</h2>
+    <p class="price">¥52,800～¥123,800</p>
+    <p class="desp">アユタヤ遺跡＆ バンパイン離宮観光付き！<span>マンダリンセンターポイント2泊4日</span></p>
+    </div>
+    <div class="box
+	">
+<div class="world-pc">    <img src="images/recommend03.jpg" alt="憧れのサントリーニ島!"></div>
+    <h2>憧れのサントリーニ島!</h2>
+    <p class="price">¥169,800～¥245,800</p>
+    <p class="desp">ヨーロッパ随一のリゾート！<span>サントリーニ島＆イタリア４日間</span></p>
+    </div>
+    <div class="box">
+   <div class="world-pc"> <img src="images/recommend04.jpg" alt="ヨセミテで大自然満喫!"></div>
+    <h2>ヨセミテで大自然満喫!</h2>
+    <p class="price">¥41,029～¥159,800</p>
+    <p class="desp">世界遺産ヨセミテ国立公園! <span>西海岸人気都市を訪ねる5日間</span></p>
+    </div>
+</div>
+	
+<p class="btn"><a href="#">もっと見る</a></p>
+</section>
+<!----------------------------------------------------------海外ツアーを探す-->
+<section id="search">
+<h1>海外ツアーを探す</h1>
+<div class="inner">
+<ul class="map">
+<li><a href="tours/europe/">ヨーロッパ</a></li>
+<li><a href="tours/north_american/">北アメリカ</a></li>
+<li><a href="tours/asia/">アジア</a></li>
+<li><a href="tours/africa/">アフリカ・中東</a></li>
+<li><a href="tours/micronesia/">ミクロネシア</a></li>
+<li><a href="tours/cs_america/">中南米</a></li>
+<li><a href="tours/oceania/">オセアニア</a></li>
+</ul>
+
+<form method="get" action="">
+<dl>
+<dt><label for="destination">出発地</label></dt>
+<dd class="select">
+<select name="destination" id="destination">
+<option value="東京" selected="selected">東京</option>
+<option value="羽田">羽田</option>
+<option value="成田">成田</option>
+<option value="大阪（関空+伊丹）">大阪（関空+伊丹）</option>
+<option value="関西国際">関西国際</option>
+<option value="伊丹">伊丹</option>
+<option value="名古屋（中部＋名古屋駅）">名古屋（中部＋名古屋駅）</option>
+<option value="中部（セントレア）">中部（セントレア）</option>
+<option value="名古屋駅">名古屋駅</option>
+<option value="福岡（福岡+博多港）">福岡（福岡+博多港）</option>
+<option value="福岡">福岡</option>
+<option value="博多港">博多港</option>
+<option value="札幌">札幌</option>
+</select></dd>
+<dt><label for="dept">出発希望日</label></dt>
+<dd class="dept-input">
+<input type="text" name="dept" size="31" maxlength="255" value="" id="dept" placeholder="カレンダーから選択してください"></dd>
+<dt><label for="deptplacecd">行き先</label></dt>
+<dd class="select">
+<select name="deptplacecd" id="deptplacecd">
+<option value="" selected="selected">選択してください</option>
+<option value="ヨーロッパ">ヨーロッパ</option>
+<option value="アジア">アジア</option>
+<option value="アフリカ・中東">アフリカ・中東</option>
+<option value="ミクロネシア">ミクロネシア</option>
+<option value="中南米">中南米</option>
+<option value="オセアニア">オセアニア</option>
+</select></dd>
+<dt><label for="keywords">キーワードで探す</label></dt>
+<dd class="keywords-input">
+<input type="text" name="keywords" class="keywords" size="31" maxlength="255" value="" placeholder="行きたい国や地名などを入力してください"></dd>
+</dl>
+<p class="btn"><input type="submit" value="検　索"></p>
+</form>
+
+</div>
+</section>
+<!----------------------------------------------------------スタッフの海外旅行記-->
+<section id="travelogue">
+<h1>スタッフの海外旅行記</h1>
+<div class="inner">
+    <div>
+    <img src="images/travelogue01.jpg" alt="パリ・ルーブル">
+    <h2>パリ・ルーブル</h2>
+    <p class="desp">パリは歩いているだけで本当に楽しかったです。</p>
+    <p class="staff">（ヨーロッパ担当スタッフA）</p>
+    </div>
+    <div>
+    <img src="images/travelogue02.jpg" alt="アンテロープキャニオン">
+    <h2>アンテロープキャニオン</h2>
+    <p class="desp">うっとりするような曲線とやわらかな色に差し込む陽の光が幻想的でした！</p>
+    <p class="staff">（アメリカ担当スタッフH）</p>
+    </div>
+    <div>
+    <img src="images/travelogue03.jpg" alt="アイスランド">
+    <h2>アイスランド</h2>
+    <p class="desp">セリャランスフォス滝は、透けるような滝でまさに絶景でした。</p>
+    <p class="staff">（ヨーロッパ担当スタッフK）</p>
+    </div>
+    <div>
+    <img src="images/travelogue04.jpg" alt="タイ・サムイ島">
+    <h2>タイ・サムイ島</h2>
+    <p class="desp">海がキレイ！プーケットより断然サムイ島です！</p>
+    <p class="staff">（アジア担当スタッフM）</p>
+    </div>
+    <div>
+    <img src="images/travelogue05.jpg" alt="イタリア・ヴェネチア">
+    <h2>イタリア・ヴェネチア</h2>
+    <p class="desp">さよならサン・マルコ。一生に一度は行っておきたい場所。</p>
+    <p class="staff">（ヨーロッパ担当スタッフA）</p>
+    </div>
+    <div>
+    <img src="images/travelogue06.jpg" alt="ノイシュバンシュタイン城">
+    <h2>ノイシュバンシュタイン城</h2>
+    <p class="desp">初めて見るノイシュバンシュタイン城にちょっとテンションが高くなります。</p>
+    <p class="staff">（ヨーロッパ担当スタッフS）</p>
+    </div>
+</div>
+<p class="btn"><a href="#">もっと見る</a></p>
+</section>
+</main>
+
+<p id="page-top"><i class="fas fa-chevron-up"></i></p>
+<!----------------------------------------------------------フッター -->
+
+<footer>
+<div class="inner">
+<div class="address-blk">
+<p class="logo"><img src="images/logo_footer.png" alt="Favorite veiw"></p>
+<p>〒151-0051 東京都渋谷区千駄ヶ谷 2-15-62<br>
+<i class="fas fa-phone fa-flip-horizontal"></i>03-5690-98422<br>
+<i class="fas fa-envelope"></i>favo_view@co.jp</p>
+
+<ul class="sns">
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+
+<nav>
+<ul>
+<li><i class="fas fa-square"></i><a href="#">おすすめ特集</a></li>
+<li><i class="fas fa-square"></i><a href="#">スタッフの海外旅行記</a></li>
+<li><i class="fas fa-square"></i><a href="#">特典・サービス</a></li>
+<li><i class="fas fa-square"></i><a href="#">お問い合わせ</a></li>
+</ul>
+<ul>
+<li><i class="fas fa-square"></i><a href="#">トラベルサポート</a></li>
+<li><i class="fas fa-square"></i><a href="#">海外旅行保険</a></li>
+<li><i class="fas fa-square"></i><a href="#">保険募集に関する勧誘方針及び販売方針</a></li>
+<li><i class="fas fa-square"></i><a href="#">外務省海外安全情報</a></li>
+<li><i class="fas fa-square"></i><a href="#">厚生労働省感染情報</a></li>
+<li><i class="fas fa-square"></i><a href="#">個人情報保護方針</a></li>
+</ul>
+</nav>
+</div>
+
+<p class="copyright">2018 Favorite view. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1027 @@
+@charset "UTF-8";
+
+/*----------------------------------------------------------------default*/
+html {
+font-size: 62.5%;
+}
+
+a {
+color: #000;
+text-decoration: none;
+}
+
+p {
+margin: 0;
+padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+padding: 0;
+font-size: 100%;
+}
+
+img {
+max-width: 100%;
+height: auto;
+border: 0;
+vertical-align: top;
+}
+
+ul {
+margin: 0;
+padding: 0;
+}
+
+ul li {
+list-style-type: none;
+padding: 0;
+}
+
+ol {
+padding: 0 0 0 1.5em;
+}
+
+ol li {
+list-style-type: decimal;
+}
+
+dl,
+dt,
+dd {
+margin: 0;
+padding: 0;
+}
+
+table {
+border-collapse: collapse;
+}
+
+input {
+cursor: pointer;
+}
+
+/*----------------------------------------------------------------fade*/
+a,
+input {
+transition: .3s ease-in-out;
+}
+
+a:hover,
+input:hover {
+opacity: .7;
+filter: alpha(opacity=70);
+}
+
+/*----------------------------------------------------------------form*/
+input[type="submit"],
+button,
+textarea {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+select {
+background: #fff;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+select::-ms-expand {
+display: none; /* IE11 */
+}
+
+/*===============================================================スマホ*/
+body {
+margin: 0;
+padding: 0;
+background: #fff;
+color: #444;
+font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+font-size: 1.2rem;
+text-align: left;
+line-height: 1.5;
+-webkit-text-size-adjust: 100%;
+}
+
+#page {
+background: #fff;
+}
+
+.inner {
+width: 94%;
+margin: 0 auto;
+}
+
+section {
+padding: 30px 0;
+}
+
+section h1 {
+margin: 0 0 30px;
+font-size: 2.1rem;
+font-weight: normal;
+text-align: center;
+letter-spacing: .1em;
+}
+
+.btn a {
+display: inline-block;
+padding: 0 5px;
+border-radius: 5px;
+background: #f00;
+color: #fff;
+text-align: center;
+line-height: 40px;
+}
+
+section .btn {
+width: 94%;
+margin: 0 auto;
+text-align: right;
+}
+
+#recommend .btn,
+#travelogue .btn {
+text-align: center;
+}
+
+#recommend .btn a,
+#travelogue .btn a {
+width: 70%;
+border-radius: 20px;
+}
+/*----------------------------------------------------------------ヘッダー*/
+header {
+position: fixed;
+z-index: 3;
+width: 100%;
+height: 45px;
+margin: -45px 0 0;
+background: #fff;
+}
+
+header .logo {
+position: absolute;
+top: 7px;
+left: 3%;
+width: 170px;
+}
+
+header h1 + i {
+display: block;
+position: absolute;
+top: 14px;
+right: 45px;
+font-size: 1.8rem;
+cursor: pointer;
+}
+
+header #h-search {
+position: absolute;
+z-index: 3;
+top: 45px;
+right: 35px;
+padding: 10px;
+background: #fff;
+}
+
+header #h-search input[type="text"] {
+box-sizing: border-box;
+height: 28px;
+margin: 0 10px 0 0;
+border: 1px solid #ccc;
+font-size: 1.4rem;
+line-height: 28px;
+}
+
+header #h-search input[type="submit"] {
+top: 14px;
+height: 28px;
+margin: 0;
+border: none;
+border-radius: 5px;
+background: #f00;
+color: #fff;
+font-size: 1.4rem;
+line-height: 28px;
+}
+
+header .menu {
+position: absolute;
+z-index: 4;
+top: 45px;
+right: 0;
+width: 250px;
+height: auto;
+background: rgba(255,255,255,.9);
+}
+
+header .btn-menu {
+position: absolute;
+top: -33px;
+right: 3%;
+width: 21px;
+height: 21px;
+border: 1px solid #656565;
+border-radius: 5px;
+}
+
+header .btn-menu span {
+display: block;
+position: absolute;
+left: 3px;
+width: 15px;
+border-bottom: solid 2px #656565;
+}
+
+header .btn-menu span:nth-child(1) {
+top: 5px;
+}
+
+header .btn-menu span:nth-child(2) {
+top: 10px;
+}
+header .btn-menu span:nth-child(3) {
+top: 15px;
+}
+
+header .header-menu {
+display: none;
+}
+
+header .header-menu .global {
+margin: 0 0 15px;
+text-align: center;
+}
+
+header .header-menu .global li {
+border-bottom: 1px solid #959595;
+}
+
+header .header-menu .global li a {
+display: block;
+height: 48px;
+font-size: 1.8rem;
+line-height: 48px;
+}
+
+header .header-menu .sub-menu {
+text-align: center;
+}
+
+header .header-menu .sub-menu ul {
+display: inline-block;
+margin: 0 0 5px;
+text-align: left;
+}
+
+header .header-menu .sub-menu li {
+margin: 0 0 .5em;
+line-height: 1.5;
+}
+
+header .header-menu .sub-menu li i {
+margin: 0 5px 0 0;
+color: #999;
+font-size: 1rem;
+vertical-align: 1px;
+}
+
+header .header-menu .sub-menu li a {
+color: #3f6d8c;
+}
+
+header .header-menu .sns {
+display: flex;
+margin: 0 0 15px;
+
+justify-content: center;
+}
+
+header .header-menu .sns a {
+display: inline-block;
+width: 30px;
+height: 30px;
+margin: 0 1px;
+background: #e1e1e1;
+text-align: center;
+line-height: 30px;
+}
+/*----------------------------------------------------------------メイン画像*/
+main {
+margin: 45px 0 0;
+}
+
+#kv {
+position: relative;
+}
+
+#kv:after {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,.4);
+content: "";
+}
+
+#kv .catch {
+position: absolute;
+z-index: 2;
+top: 50%;
+left: 0;
+width: 100%;
+color: #fff;
+font-size: 1.8rem;
+text-align: center;
+line-height: 1.2;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+#kv .catch > span {
+display: block;
+}
+
+#kv .catch > span > span {
+display: inline-block;
+position: relative;
+}
+
+#kv .catch span span span {
+position: absolute;
+top: -14px;
+left: 50%;
+width: 100%;
+font-size: 1rem;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+
+#kv .btn {
+	position: absolute;
+	z-index: 2;
+	right: 65px;
+	bottom: -93px;
+}
+/*----------------------------------------------------------------おすすめ特集*/
+#recommend h1 {
+color: #f00;
+}
+
+#recommend .lead {
+width: 94%;
+margin: 0 auto 15px;
+color: #a8a8a8;
+	text-align: center;
+}
+
+#recommend .inner {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+	
+}
+
+#recommend .inner .box {
+width: 50%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+
+#recommend .inner div img {
+width: 90%;
+margin: 0 auto;
+}
+
+#recommend .inner div h2 {
+	width: 90%;
+	padding-top: 10px;
+font-size: 1.5rem;
+font-weight: normal;
+}
+
+#recommend .inner div .price {
+		width: 90%;
+margin: 0 0 5px;
+color: #f00;
+font-size: 2rem;
+font-weight: bold;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
+#recommend .inner div .desp {
+display: inline-block;
+font-size:1.5rem;
+font-weight: bold;
+	width: 90%;
+
+}
+#recommend .inner span {
+	display: none;
+}
+#recommend　.inner.world-pc {
+	width: 20%;
+	height: auto;
+}
+
+#recommend .btn {
+text-align: center;
+}
+
+#recommend .btn a {
+width: 70%;
+border-radius: 20px;
+}
+/*----------------------------------------------------------------海外ツアーを探す*/
+#search {
+background: #e5eff7;
+}
+
+#search .map {
+display: none;
+}
+
+#search dl {
+margin: 0 0 40px;
+}
+
+#search dt {
+margin: 0 0 5px;
+}
+
+#search dd {
+margin: 0 0 20px;
+}
+
+#search .select {
+position: relative;
+width: 100%;
+}
+
+#search .select:after {
+position: absolute;
+top: 10px;
+right: 10px;
+color: #f00;
+font-family: "Font Awesome 5 Free";
+font-size: 1.3rem;
+font-weight: 900;
+content: "\f0d7";
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+#search input[type="text"],
+#search select {
+box-sizing: border-box;
+position: relative;
+width: 100%;
+height: 40px;
+padding: 0 10px;
+border: 1px solid #ebebeb;
+background: #fff;
+font-size: 1.2rem;
+line-height: 40px;
+}
+
+
+
+
+#search .dept-input {
+position: relative;
+}
+
+#search .dept-input:after {
+position: absolute;
+top: 8px;
+right: 10px;
+color: #f00;
+font-family: "Font Awesome 5 Free";
+font-size: 1.6rem;
+font-weight: 900;
+content: "\f073";
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+#search .keywords
+ {
+padding-left:30px;
+}
+
+#search .keywords-input {
+position: relative;
+}
+
+#search #destination {
+color: #f00;
+}
+
+#search .btn {
+width: 100%;
+}
+/*----------------------------------------------------------------スタッフの海外旅行記*/
+#search input[type="submit"] {
+display: block;
+width: 70%;
+margin: 0 auto;
+padding: 0;
+border: none;
+border-radius: 20px;
+background: #f00;
+box-shadow: none;
+color: #fff;
+font-size: 1.2rem;
+text-align: center;
+line-height: 40px;
+}
+
+#travelogue .inner div {
+position: relative;
+min-height: 90px;
+margin: 0 0 20px;
+}
+
+#travelogue .inner div:last-child {
+margin: 0 0 30px;
+}
+
+#travelogue .inner div img {
+position: absolute;
+width: 90px;
+}
+
+#travelogue .inner div h2,
+#travelogue .inner div .desp {
+margin: 0 0 0 100px;
+}
+
+#travelogue .inner div .staff {
+position: absolute;
+right: 0;
+bottom: 0;
+text-align: right;
+}
+/*----------------------------------------------------------------フッター */
+footer {
+padding: 15px 0 0;
+background: #2c3e4a;
+}
+
+footer .address-blk .logo {
+width: 150px;
+margin: 0 0 15px;
+}
+
+footer .address-blk p {
+margin: 0 0 15px;
+color: #ccc;
+}
+
+footer .address-blk p i {
+margin: 0 5px 0 0;
+}
+
+footer .sns {
+display: none;
+}
+
+footer nav {
+display: none;
+}
+
+footer .copyright {
+padding: 15px 0;
+border-top: 1px solid rgba(255,255,255,.1);
+color: #ccc;
+text-align: center;
+}
+
+#page-top {
+display: flex;
+position: fixed;
+right: 20px;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #f00;
+color: #fff;
+font-size: 1.6rem;
+justify-content: center;
+align-items: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/*===============================================================PC*/
+@media all and (min-width:1024px) {
+body {
+font-size: 1.3rem;
+line-height: 1.615384615;
+}
+
+main {
+margin: 0;
+}
+
+section {
+padding: 60px 0;
+}
+
+section h1 {
+margin: 0 0 30px;
+font-size: 4.2rem;
+}
+
+.btn a {
+display: inline-block;
+padding: 0 10px;
+line-height: 43px;
+}
+
+.inner {
+width: 1024px;
+}
+
+section .btn {
+width: 1024px;
+}
+/*----------------------------------------------------------------ヘッダーー */
+header {
+display: flex;
+position: relative;
+width: 1024px;
+height: 60px;
+margin: 0 auto;
+padding: 15px 0;
+}
+
+header .logo {
+position: relative;
+top: 0;
+margin: 15px 50px 0 0;
+}
+
+header h1 + i {
+top: 40px;
+right: 0;
+font-size: 1.6rem;
+}
+
+header .menu {
+position: relative;
+top: 0;
+width: auto;
+background: transparent;
+}
+
+header .header-menu {
+display: block !important;
+}
+
+header .btn-menu,
+header .sub-menu,
+header .sns {
+display: none !important;
+}
+
+header .header-menu .global {
+margin: 0;
+text-align: left;
+}
+
+header .header-menu .global ul {
+display: flex;
+}
+
+header .header-menu .global li {
+border: none;
+}
+
+header .header-menu .global li a {
+display: inline-block;
+height: 60px;
+padding: 0 20px;
+border-right: 1px solid rgba(0,0,0,.1);
+font-size: 1.3rem;
+line-height: 60px;
+}
+
+header #h-search {
+top: 90px;
+right: 0;
+}
+
+header #h-search input[type="submit"] {
+font-size: 1.3rem;
+}
+/*----------------------------------------------------------------メイン画像ーー */
+#kv img {
+width: 100%;
+height: 100%;
+}
+
+#kv .catch {
+font-size: 4.2rem;
+
+}
+
+#kv .catch > span {
+display: inline;
+}
+
+#kv .catch span span span {
+top: -20px;
+font-size: 1.6rem;
+}
+
+#kv .btn {
+right: 0;
+bottom: 30px;
+left: calc(50% - 512px);
+width: 1024px;
+text-align: right;
+}
+/*----------------------------------------------------------------おすすめ特集 */
+#recommend .lead {
+width: 100%;
+margin: 0 0 30px;
+text-align: center;
+}
+
+#recommend .inner {
+margin: 0 auto 40px;
+justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+#recommend .inner div {
+width: 240px;
+margin: 0;
+	
+}
+	#recommend .inner .box {
+		text-align: left;
+	}
+#recommend .inner div:nth-child(2n) {
+margin: 0;
+}
+
+#recommend .inner div img {
+margin: 0 0 5px;
+}
+
+#recommend .inner div h2 {
+font-size: 2rem;
+}
+
+#recommend .inner div .price {
+margin: 0 0 5px;
+font-size: 2rem;
+}
+	#recommend .inner span {
+		display: inline;
+	}
+/*----------------------------------------------------------------海外ツアーを探す */
+#search .inner {
+display: flex;
+justify-content: space-between;
+}
+
+#search .map {
+display: block;
+position: relative;
+width: 660px;
+background: url(images/map.png) no-repeat center center;
+background-size: contain;
+}
+
+#search .map li a {
+display: inline-block;
+position: absolute;
+height: 24px;
+padding: 0 5px;
+background: #f00;
+color: #fff;
+line-height: 24px;
+}
+
+#search .map li:nth-of-type(1) a {
+top: 125px;
+left: 100px;
+}
+
+#search .map li:nth-of-type(2) a {
+top: 145px;
+right: 130px;
+}
+
+#search .map li:nth-of-type(3) a {
+top: 185px;
+left: 185px;
+}
+
+#search .map li:nth-of-type(4) a {
+top: 200px;
+left: 10px;
+}
+
+#search .map li:nth-of-type(5) a {
+top: 200px;
+left: 330px;
+}
+
+#search .map li:nth-of-type(6) a {
+top: 280px;
+right: 60px;
+}
+
+#search .map li:nth-of-type(7) a {
+top: 290px;
+left: 240px;
+}
+
+#search form {
+width: 300px;
+}
+
+#search dl {
+margin: 0 0 40px;
+}
+
+#search dt {
+margin: 0 0 5px;
+}
+
+#search dd {
+margin: 0 0 20px;
+}
+
+#search form input[type="text"],
+#search form select {
+box-sizing: border-box;
+width: 100%;
+height: 40px;
+padding: 0 10px;
+border: 1px solid #ebebeb;
+background: #fff;
+font-size: 1.3rem;
+line-height: 40px;
+}
+/*----------------------------------------------------------------スタッフの海外旅行記 */
+#travelogue .inner {
+display: flex;
+margin: 0 auto 20px;
+
+flex-wrap: wrap;
+}
+
+#search form .btn {
+width: 100%;
+}
+
+#search form input[type="submit"] {
+display: block;
+width: 100%;
+margin: 0;
+padding: 0;
+border: none;
+border-radius: 5px;
+background: #f00;
+box-shadow: none;
+color: #fff;
+font-size: 1.4rem;
+text-align: center;
+line-height: 40px;
+}
+
+#recommend .btn,
+#travelogue .btn {
+text-align: right;
+}
+
+#recommend .btn a,
+#travelogue .btn a {
+width: auto;
+border-radius: 5px;
+}
+
+#travelogue .inner div {
+width: calc(calc(100% - 40px) / 3);
+min-height: 100px;
+margin: 0 20px 20px 0;
+}
+
+*::-ms-backdrop, #travelogue .inner div {
+width: 328px; /* IE11 */
+}
+
+#travelogue .inner div:nth-child(2n) {
+margin: 0 20px 20px 0;
+}
+
+#travelogue .inner div:nth-child(3n) {
+margin: 0 0 20px;
+}
+
+#travelogue .inner div img {
+width: 100px;
+}
+
+#travelogue .inner div h2,
+#travelogue .inner div .desp {
+margin: 0 0 0 110px;
+}
+/*----------------------------------------------------------------フッター  */
+footer {
+padding: 40px 0 0;
+}
+
+footer .inner {
+display: flex;
+margin: 0 auto 40px;
+justify-content: space-between;
+}
+
+footer .address-blk .logo {
+width: 200px;
+margin: 0 0 20px;
+}
+
+footer .address-blk p {
+margin: 0 0 20px;
+}
+
+footer .sns {
+display: flex;
+}
+
+footer .sns li {
+margin: 0 2px 0 0;
+}
+
+footer .sns li a {
+display: inline-block;
+width: 43px;
+height: 43px;
+background: #fff;
+color: #444;
+font-size: 1.6rem;
+text-align: center;
+line-height: 43px;
+}
+
+footer nav {
+display: flex;
+margin: 54px 0 0;
+}
+
+footer nav ul {
+margin: 0 0 0 120px;
+}
+
+footer nav li {
+margin: 0 0 17px;
+}
+
+footer nav i {
+margin: 0 5px 0 0;
+color: #ccc;
+font-size: 1rem
+-webkit-transform:scale(.6);
+-moz-transform: scale(.6);
+-ms-transform: scale(.6);
+-o-transform: scale(.6);
+transform: scale(.6);
+}
+
+footer nav a {
+color: #7da5bf;
+}
+
+footer .copyright {
+padding: 20px 0;
+}
+
+#page-top {
+width: 40px;
+height: 40px;
+font-size: 2rem;
+}
+
+}
